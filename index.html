@@ -1,31 +1,90 @@
-<!-- Create a webpage and with p, h1-6, img with different styles -->
- <!Doctype html>
-<link rel="stylesheet" href="style/style.css">
-
-<p class="pstyle">
-
-    It is a long established fact that a reader will be distracted by
-     the readable content of a page when looking at its layout. The point 
-     of using Lorem Ipsum is that it has a more-or-less normal distribution 
-     of letters, as opposed to using 'Content here, content here', making 
-     it look like readable English. Many desktop publishing packages and web page editors
-      now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-     sites still in their infancy. Various versions have evolved over the years, sometimes
-      by accident, sometimes on purpose (injected humour and the like).
-</p>
-
-<h1 class="o">ONe</h1>
-<h2 class="t">Two</h2>
-<h3 class = "th">Three</h3>
-<h4 class="f">FOur</h4>
-<h5 class ="fi">Five</h5>
-<h6 class ="s">Six</h6>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">
 
 
-<img class="im1" src="img/b.jpg" alt="one">
-<img clas="im2" src="img/bg.jpg" alt="two">
 
-<aside style ="border: 2px solid black; float:right;>
-    <p>jnfjfn</p>
+    </script>
+    
+</head>
+<body>
+    <h2 id="demo">Hello</h2>
+    <p id="demo2"> This is my first code in javascript</p>
+<p id="demo3"></p>
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello, I love javascript'
+">Js</button>
 
-</aside>
+
+<button type="button" onclick="document.getElementById('demo2').innerHTML = 'No its second time '
+">Change</button>
+
+
+<button type="button" onclick="document.getElementById('demo3').innerHTML = 'Bye,Bye '
+">Say Goodbye</button>
+
+
+
+
+<!-- Change attribute value -->
+
+
+<br><br>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize = '70px'">Change Font size</button>
+<button type="button" onclick="document.getElementById('demo').style.color = 'blue'">Change Font color</button>
+
+<br><br>
+
+<button type="button" onclick="document.getElementById('demo').style.display ='none'">Hide</button>
+<button type="button" onclick="document.getElementById('demo').style.display ='block'">show</button>
+
+
+<br><br><br>
+
+<button type="button" onclick="myFunction()">Change Heading font by function</button>
+
+<p id="myCalcul"></p>
+<button type="button" onclick="showCalcul()">Change Heading font by function</button>
+
+</script>
+</body>
+</html>
+
+<script>
+    function myinfo() {
+        let name = "ahmed";
+        let age = "27";
+        let hobby = "chess";
+        console.log("My name is" + name +"my age is" + age + "My hobby is" + hobby);
+    }
+
+
+
+    myinfo();
+
+    console.log("hello, JavaScript");
+let x = 10;
+console.log(x);
+let namee ="ahmed"
+let agee = 20;
+let num = 200;
+let isactive = true;
+let value;
+let empty = null;
+console.log(namee + "," + num + "," + isactive + "," + value  + "," + empty);
+//     console.log("hello, JavaScript");
+// let x = 10;
+// console.log(x);
+// let name ="ahmed"
+// let age = 20;
+// let num = 200;
+// let isactive = true;
+// let value;
+// let empty = null;
+// console.log(name + "," + num + "," + isactive + "," + value  + "," + empty);
+</script>
